@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alina Manzhura - Portfolio</title>
+    <meta name="description" content="Young creative artist from Ukraine exploring digital art, illustration, and design. Follow my artistic journey and creative experiments.">
+    
+    <!-- PhotoSwipe CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Preload critical images -->
+    <link rel="preload" as="image" href="https://res.cloudinary.com/dhztmwgns/image/upload/c_fill,w_300,h_400/3_hlrb2w.webp">
+    <link rel="preload" as="image" href="https://res.cloudinary.com/dhztmwgns/image/upload/c_fill,w_200,h_350/9_k1kckc.webp">
+    <link rel="preload" as="image" href="https://res.cloudinary.com/dhztmwgns/image/upload/IMG_0317_mknaht.webp">
+</head>
+<body>
+    <!-- Floating Background Images -->
+    <div class="floating-bg-images">
+        <img src="https://res.cloudinary.com/dhztmwgns/image/upload/c_fill,w_400,h_350/30_bq4qpp.webp" class="floating-img floating-img-1" alt="">
+        <img src="https://res.cloudinary.com/dhztmwgns/image/upload/c_fill,w_300,h_400/31_v5k8lm.webp" class="floating-img floating-img-2" alt="">
+        <img src="https://res.cloudinary.com/dhztmwgns/image/upload/c_fill,w_350,h_350/28_mwucrn.webp" class="floating-img floating-img-3" alt="">
+        <img src="https://res.cloudinary.com/dhztmwgns/image/upload/c_fill,w_380,h_320/25_h1lvgv.webp" class="floating-img floating-img-4" alt="">
+        <img src="https://res.cloudinary.com/dhztmwgns/image/upload/c_fill,w_420,h_380/20_wqu6ss.webp" class="floating-img floating-img-5" alt="">
+        <img src="https://res.cloudinary.com/dhztmwgns/image/upload/c_fill,w_320,h_400/19_lkroqt.webp" class="floating-img floating-img-6" alt="">
+        <img src="https://res.cloudinary.com/dhztmwgns/image/upload/c_fill,w_350,h_450/8_lxyptx.webp" class="floating-img floating-img-7" alt="">
+        <img src="https://res.cloudinary.com/dhztmwgns/image/upload/c_fill,w_380,h_380/9_k1kckc.webp" class="floating-img floating-img-8" alt="">
+        <img src="https://res.cloudinary.com/dhztmwgns/image/upload/c_fill,w_400,h_350/2_fip4oh.webp" class="floating-img floating-img-9" alt="">
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link"><i class="fas fa-home"></i> <span>Home</span></a></li>
+                <li><a href="#about" class="nav-link"><i class="fas fa-user"></i> <span>About</span></a></li>
+                <li><a href="#portfolio" class="nav-link"><i class="fas fa-images"></i> <span>Portfolio</span></a></li>
+                <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> <span>Contact</span></a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Creating Digital Magic</h1>
+                <p class="hero-subtitle">Aspiring artist exploring digital creativity</p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary">View Work</a>
+                    <a href="#contact" class="btn btn-secondary">Connect</a>
+                </div>
+            </div>
+            <div class="hero-gallery">
+                <img class="hero-image-item hero-img-1" src="https://res.cloudinary.com/dhztmwgns/image/upload/c_fill,w_300,h_400/3_hlrb2w.webp" alt="" loading="eager">
+                <img class="hero-image-item hero-img-2" src="https://res.cloudinary.com/dhztmwgns/image/upload/c_fill,w_200,h_350/9_k1kckc.webp" alt="" loading="eager">
+                <img class="hero-image-item hero-img-3" src="https://res.cloudinary.com/dhztmwgns/image/upload/c_fill,w_250,h_300/29_woei8w.webp" alt="" loading="eager">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-layout">
+                <div class="about-images">
+                    <img src="https://res.cloudinary.com/dhztmwgns/image/upload/IMG_0317_mknaht.webp" class="profile-image" alt="Alina Manzhura" loading="eager">
+                </div>
+                <div class="about-content">
+                    <h2>About</h2>
+                    <h3>Hi, I'm Alina from Ukraine 🇺🇦</h3>
+                    <p>A creative soul passionate about art and digital design. I'm on a journey of discovering my artistic voice through various mediums, from traditional drawing to digital illustration and web design.</p>
+                    <div class="skills-compact">
+                        <span class="skill-tag">Digital Art</span>
+                        <span class="skill-tag">Web Design</span>
+                        <span class="skill-tag">Illustration</span>
+                        <span class="skill-tag">Animation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="">
+            <div class="section-header">
+                <h2>My Creative Journey</h2>
+            </div>
+            
+            <!-- Masonry Gallery -->
+            <div class="masonry-gallery" id="gallery">
+                <div class="gallery-item large">
+                    <a href="https://res.cloudinary.com/dhztmwgns/image/upload/33_thghlg.webp" 
+                       data-pswp-width="4914" 
+                       data-pswp-height="6820">
+                        <img src="https://res.cloudinary.com/dhztmwgns/image/upload/c_fill,w_600,h_400/33_thghlg.webp" 
+                             alt="" loading="lazy">
+                    </a>
+                </div>
+                
+                <div class="gallery-item tall">
+                    <a href="https://res.cloudinary.com/dhztmwgns/image/upload/32_umew0i.webp" 
+                       data-pswp-width="4924" 
+                       data-pswp-height="6842">
+                        <img src="https://res.cloudinary.com/dhztmwgns/image/upload/c_fill,w_350,h_600/32_umew0i.webp" 
+                             alt="" loading="lazy">
+                    </a>
+                </div>
+                
+                <div class="gallery-item wide">
+                    <a href="https://res.cloudinary.com/dhztmwgns/image/upload/30_bq4qpp.webp" 
+                       data-pswp-width="4188" 
+                       data-pswp-height="3182">
+                        <img src="https://res.cloudinary.com/dhztmwgns/image/upload/c_fill,w_600,h_300/30_bq4qpp.webp" 
+                             alt="" loading="lazy">
+                    </a>
+                </div>
+                
+                <div class="gallery-item medium">
+                    <a href="https://res.cloudinary.com/dhztmwgns/image/upload/31_v5k8lm.webp" 
+                       data-pswp-width="3790" 
+                       data-pswp-height="5214">
+                        <img src="https://res.cloudinary.com/dhztmwgns/image/upload/c_fill,w_400,h_500/31_v5k8lm.webp" 
+                             alt="" loading="lazy">
+                    </a>
+                </div>
+                
+                <div class="gallery-item small">
+                    <a href="https://res.cloudinary.com/dhztmwgns/image/upload/28_mwucrn.webp" 
+                       data-pswp-width="3818" 
+                       data-pswp-height="4458">
+                        <img src="https://res.cloudinary.com/dhztmwgns/image/upload/c_fill,w_300,h_300/28_mwucrn.webp" 
+                             alt="" loading="lazy">
+                    </a>
+                </div>
+                
+                <div class="gallery-item tall">
+                    <a href="https://res.cloudinary.com/dhztmwgns/image/upload/29_woei8w.webp" 
+                       data-pswp-width="3438" 
+                       data-pswp-height="4536">
+                        <img src="https://res.cloudinary.com/dhztmwgns/image/upload/c_fill,w_350,h_600/29_woei8w.webp" 
+                             alt="" loading="lazy">
+                    </a>
+                </div>
+
+                <div class="gallery-item wide">
+                    <a href="https://res.cloudinary.com/dhztmwgns/image/upload/27_ioewvr.webp" 
+                       data-pswp-width="4358" 
+                       data-pswp-height="3350">
+                        <img src="https://res.cloudinary.com/dhztmwgns/image/upload/c_fill,w_550,h_250/27_ioewvr.webp" 
+                             alt="" loading="lazy">
+                    </a>
+                </div>
+
+                <div class="gallery-item medium">
+                    <a href="https://res.cloudinary.com/dhztmwgns/image/upload/26_yhhhoh.webp" 
+                       data-pswp-width="3314" 
+                       data-pswp-height="4178">
+                        <img src="https://res.cloudinary.com/dhztmwgns/image/upload/c_fill,w_400,h_450/26_yhhhoh.webp" 
+                             alt="" loading="lazy">
+                    </a>
+                </div>
+
+                <div class="gallery-item small">
+                    <a href="https://res.cloudinary.com/dhztmwgns/image/upload/24_h3imxm.webp" 
+                       data-pswp-width="3242" 
+                       data-pswp-height="4232">
+                        <img src="https://res.cloudinary.com/dhztmwgns/image/upload/c_fill,w_280,h_350/24_h3imxm.webp" 
+                             alt="" loading="lazy">
+                    </a>
+                </div>
+
+                <div class="gallery-item medium">
+                    <a href="https://res.cloudinary.com/dhztmwgns/image/upload/25_h1lvgv.webp" 
+                       data-pswp-width="3242" 
+                       data-pswp-height="3900">
+                        <img src="https://res.cloudinary.com/dhztmwgns/image/upload/c_fill,w_380,h_480/25_h1lvgv.webp" 
+                             alt="" loading="lazy">
+                    </a>
+                </div>
+
+                <div class="gallery-item tall">
+                    <a href="https://res.cloudinary.com/dhztmwgns/image/upload/23_wktcxc.webp" 
+                       data-pswp-width="3338" 
+                       data-pswp-height="4732">
+                        <img src="https://res.cloudinary.com/dhztmwgns/image/upload/c_fill,w_300,h_550/23_wktcxc.webp" 
+                             alt="" loading="lazy">
+                    </a>
+                </div>
+
+                <div class="gallery-item small">
+                    <a href="https://res.cloudinary.com/dhztmwgns/image/upload/22_zjfe08.webp" 
+                       data-pswp-width="2834" 
+                       data-pswp-height="4318">
+                        <img src="https://res.cloudinary.com/dhztmwgns/image/upload/c_fill,w_320,h_320/22_zjfe08.webp" 
+                             alt="" loading="lazy">
+                    </a>
+                </div>
+
+                <div class="gallery-item large">
+                    <a href="https://res.cloudinary.com/dhztmwgns/image/upload/20_wqu6ss.webp" 
+                       data-pswp-width="3814" 
+                       data-pswp-height="4532">
+                        <img src="https://res.cloudinary.com/dhztmwgns/image/upload/c_fill,w_500,h_400/20_wqu6ss.webp" 
+                             alt="" loading="lazy">
+                    </a>
+                </div>
+
+                <div class="gallery-item tall">
+                    <a href="https://res.cloudinary.com/dhztmwgns/image/upload/21_chawas.webp" 
+                       data-pswp-width="3288" 
+                       data-pswp-height="4790">
+                        <img src="https://res.cloudinary.com/dhztmwgns/image/upload/c_fill,w_350,h_600/21_chawas.webp" 
+                             alt="" loading="lazy">
+                    </a>
+                </div>
+
+                <div class="gallery-item medium">
+                    <a href="https://res.cloudinary.com/dhztmwgns/image/upload/19_lkroqt.webp" 
+                       data-pswp-width="4226" 
+                       data-pswp-height="5664">
+                        <img src="https://res.cloudinary.com/dhztmwgns/image/upload/c_fill,w_400,h_480/19_lkroqt.webp" 
+                             alt="" loading="lazy">
+                    </a>
+                </div>
+
+                <div class="gallery-item small">
+                    <a href="https://res.cloudinary.com/dhztmwgns/image/upload/18_giarlw.webp" 
+                       data-pswp-width="3450" 
+                       data-pswp-height="4574">
+                        <img src="https://res.cloudinary.com/dhztmwgns/image/upload/c_fill,w_300,h_350/18_giarlw.webp" 
+                             alt="" loading="lazy">
+                    </a>
+                </div>
+
+                <div class="gallery-item tall">
+                    <a href="https://res.cloudinary.com/dhztmwgns/image/upload/17_vgyb5u.webp" 
+                       data-pswp-width="4706" 
+                       data-pswp-height="6520">
+                        <img src="https://res.cloudinary.com/dhztmwgns/image/upload/c_fill,w_350,h_600/17_vgyb5u.webp" 
+                             alt="" loading="lazy">
+                    </a>
+                </div>
+
+                <div class="gallery-item medium">
+                    <a href="https://res.cloudinary.com/dhztmwgns/image/upload/15_cfc3p6.webp" 
+                       data-pswp-width="4836" 
+                       data-pswp-height="6484">
+                        <img src="https://res.cloudinary.com/dhztmwgns/image/upload/c_fill,w_400,h_450/15_cfc3p6.webp" 
+                             alt="" loading="lazy">
+                    </a>
+                </div>
+
+                <div class="gallery-item tall">
+                    <a href="https://res.cloudinary.com/dhztmwgns/image/upload/13_iduqob.webp" 
+                       data-pswp-width="3018" 
+                       data-pswp-height="4526">
+                        <img src="https://res.cloudinary.com/dhztmwgns/image/upload/c_fill,w_300,h_550/13_iduqob.webp" 
+                             alt="" loading="lazy">
+                    </a>
+                </div>
+
+                <div class="gallery-item small">
+                    <a href="https://res.cloudinary.com/dhztmwgns/image/upload/14_wpxwwi.webp" 
+                       data-pswp-width="3236" 
+                       data-pswp-height="4776">
+                        <img src="https://res.cloudinary.com/dhztmwgns/image/upload/c_fill,w_280,h_350/14_wpxwwi.webp" 
+                             alt="" loading="lazy">
+                    </a>
+                </div>
+
+                <div class="gallery-item tall">
+                    <a href="https://res.cloudinary.com/dhztmwgns/image/upload/12_kl1q64.webp" 
+                       data-pswp-width="3396" 
+                       data-pswp-height="4712">
+                        <img src="https://res.cloudinary.com/dhztmwgns/image/upload/c_fill,w_350,h_600/12_kl1q64.webp" 
+                             alt="" loading="lazy">
+                    </a>
+                </div>
+
+                <div class="gallery-item medium">
+                    <a href="https://res.cloudinary.com/dhztmwgns/image/upload/11_uc2bzo.webp" 
+                       data-pswp-width="3396" 
+                       data-pswp-height="4712">
+                        <img src="https://res.cloudinary.com/dhztmwgns/image/upload/c_fill,w_400,h_500/11_uc2bzo.webp" 
+                             alt="" loading="lazy">
+                    </a>
+                </div>
+
+                <div class="gallery-item large">
+                    <a href="https://res.cloudinary.com/dhztmwgns/image/upload/10_gx3hzi.webp" 
+                       data-pswp-width="3344" 
+                       data-pswp-height="4372">
+                        <img src="https://res.cloudinary.com/dhztmwgns/image/upload/c_fill,w_500,h_400/10_gx3hzi.webp" 
+                             alt="" loading="lazy">
+                    </a>
+                </div>
+
+                <div class="gallery-item tall">
+                    <a href="https://res.cloudinary.com/dhztmwgns/image/upload/8_lxyptx.webp" 
+                       data-pswp-width="3178" 
+                       data-pswp-height="4750">
+                        <img src="https://res.cloudinary.com/dhztmwgns/image/upload/c_fill,w_350,h_600/8_lxyptx.webp" 
+                             alt="" loading="lazy">
+                    </a>
+                </div>
+
+                <div class="gallery-item small">
+                    <a href="https://res.cloudinary.com/dhztmwgns/image/upload/9_k1kckc.webp" 
+                       data-pswp-width="3242" 
+                       data-pswp-height="4782">
+                        <img src="https://res.cloudinary.com/dhztmwgns/image/upload/c_fill,w_320,h_320/9_k1kckc.webp" 
+                             alt="" loading="lazy">
+                    </a>
+                </div>
+
+                <div class="gallery-item tall">
+                    <a href="https://res.cloudinary.com/dhztmwgns/image/upload/7_yz6hy8.webp" 
+                       data-pswp-width="3266" 
+                       data-pswp-height="4750">
+                        <img src="https://res.cloudinary.com/dhztmwgns/image/upload/c_fill,w_300,h_550/7_yz6hy8.webp" 
+                             alt="" loading="lazy">
+                    </a>
+                </div>
+
+                <div class="gallery-item medium">
+                    <a href="https://res.cloudinary.com/dhztmwgns/image/upload/6_osezv8.webp" 
+                       data-pswp-width="3240" 
+                       data-pswp-height="4760">
+                        <img src="https://res.cloudinary.com/dhztmwgns/image/upload/c_fill,w_400,h_450/6_osezv8.webp" 
+                             alt="" loading="lazy">
+                    </a>
+                </div>
+
+                <div class="gallery-item tall">
+                    <a href="https://res.cloudinary.com/dhztmwgns/image/upload/5_ybqyut.webp" 
+                       data-pswp-width="3272" 
+                       data-pswp-height="4770">
+                        <img src="https://res.cloudinary.com/dhztmwgns/image/upload/c_fill,w_350,h_600/5_ybqyut.webp" 
+                             alt="" loading="lazy">
+                    </a>
+                </div>
+
+                <div class="gallery-item small">
+                    <a href="https://res.cloudinary.com/dhztmwgns/image/upload/3_hlrb2w.webp" 
+                       data-pswp-width="3246" 
+                       data-pswp-height="4476">
+                        <img src="https://res.cloudinary.com/dhztmwgns/image/upload/c_fill,w_300,h_350/3_hlrb2w.webp" 
+                             alt="" loading="lazy">
+                    </a>
+                </div>
+
+                <div class="gallery-item tall">
+                    <a href="https://res.cloudinary.com/dhztmwgns/image/upload/4_awswcm.webp" 
+                       data-pswp-width="3296" 
+                       data-pswp-height="4606">
+                        <img src="https://res.cloudinary.com/dhztmwgns/image/upload/c_fill,w_350,h_600/4_awswcm.webp" 
+                             alt="" loading="lazy">
+                    </a>
+                </div>
+
+                <div class="gallery-item medium">
+                    <a href="https://res.cloudinary.com/dhztmwgns/image/upload/2_fip4oh.webp" 
+                       data-pswp-width="3400" 
+                       data-pswp-height="4662">
+                        <img src="https://res.cloudinary.com/dhztmwgns/image/upload/c_fill,w_400,h_500/2_fip4oh.webp" 
+                             alt="" loading="lazy">
+                    </a>
+                </div>
+
+                <div class="gallery-item large">
+                    <a href="https://res.cloudinary.com/dhztmwgns/image/upload/1_hbjqtt.webp" 
+                       data-pswp-width="3410" 
+                       data-pswp-height="4376">
+                        <img src="https://res.cloudinary.com/dhztmwgns/image/upload/c_fill,w_600,h_400/1_hbjqtt.webp" 
+                             alt="" loading="lazy">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-layout">
+                <div class="contact-visual">
+                    <img src="https://res.cloudinary.com/dhztmwgns/image/upload/c_fill,w_400,h_300/11_uc2bzo.webp" class="contact-img" alt="" loading="lazy">
+                    <div class="contact-shapes">
+                        <div class="contact-shape-1"></div>
+                        <div class="contact-shape-2"></div>
+                    </div>
+                </div>
+                <div class="contact-content">
+                    <h2>Let's Connect</h2>
+                    <p class="contact-intro">Always excited to connect, share ideas, or collaborate on artistic projects!</p>
+                    <div class="contact-info-compact">
+                        <a href="mailto:manzhuraalina@gmail.com" class="contact-link">
+                            <i class="fas fa-envelope"></i>
+                            manzhuraalina@gmail.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Made with 💜 by Alina • Young artist from Ukraine 🇺🇦 • Copyright 2025</p>
+    </footer>
+
+    <!-- PhotoSwipe JavaScript -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe-lightbox.esm.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe.esm.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html> 
