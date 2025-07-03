@@ -600,7 +600,7 @@ p {
 
 .section-header {
     text-align: center;
-    margin-bottom: 6rem;
+    margin-bottom: 4rem;
     position: relative;
     z-index: 3;
 }
@@ -701,17 +701,6 @@ p {
     image-rendering: crisp-edges;
     will-change: transform, opacity;
     backface-visibility: hidden;
-}
-
-/* Lazy loading enhancement */
-img[loading="lazy"] {
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
-
-img[loading="lazy"].loaded,
-img[loading="eager"] {
-    opacity: 1;
 }
 
 /* Contact Section Enhancement */
@@ -884,7 +873,7 @@ img[loading="eager"] {
     h2 { font-size: 2.8rem; }
     .container { padding: 0 2rem; }
     .navbar { width: 180px; }
-    .hero, .about, .portfolio, .contact { margin-right: 180px; }
+    .hero, .about, .portfolio, .contact, .instagram { margin-right: 180px; }
     .hero-container, .about-layout, .contact-layout { padding: 0 2rem; }
 }
 
@@ -933,7 +922,7 @@ img[loading="eager"] {
         display: flex;
     }
     
-    .hero, .about, .portfolio, .contact { 
+    .hero, .about, .portfolio, .contact, .instagram { 
         margin-right: 0;
         margin-top: 0;
     }
@@ -1042,6 +1031,24 @@ img[loading="eager"] {
         opacity: 0.05;
         max-width: 300px;
     }
+
+    .instagram-cta .btn {
+        padding: 0.8rem 2rem;
+        font-size: 1rem;
+    }
+
+    .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .contact-visual {
+        order: -1;
+        height: 300px;
+    }
+
+    .container { padding: 0 1rem; }
+    .hero-container, .about-layout, .contact-layout { padding: 0 1rem; }
 }
 
 /* Smooth scrolling enhancement */
@@ -1084,4 +1091,127 @@ img[loading="eager"] {
 .nav-menu li:nth-child(1) .nav-link { --animation-order: 1; }
 .nav-menu li:nth-child(2) .nav-link { --animation-order: 2; }
 .nav-menu li:nth-child(3) .nav-link { --animation-order: 3; }
-.nav-menu li:nth-child(4) .nav-link { --animation-order: 4; } 
+.nav-menu li:nth-child(4) .nav-link { --animation-order: 4; }
+.nav-menu li:nth-child(5) .nav-link { --animation-order: 5; }
+
+/* Instagram Section */
+.instagram {
+    padding: 8rem 0;
+    position: relative;
+    margin-right: 170px;
+    z-index: 2;
+}
+
+.instagram::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(248, 249, 250, 0.95) 0%, rgba(255, 245, 251, 0.95) 100%);
+    z-index: -1;
+}
+
+.instagram-cta {
+    text-align: center;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.instagram-cta .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    background: linear-gradient(135deg, #E1306C, #FFCC80);
+    color: var(--white);
+    border: none;
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 50px;
+    box-shadow: 0 8px 25px rgba(225, 48, 108, 0.3);
+    transition: var(--transition);
+}
+
+.instagram-cta .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(225, 48, 108, 0.4);
+}
+
+.instagram-cta .btn i {
+    font-size: 1.3rem;
+}
+
+/* Instagram Widget Alternative */
+.instagram-widget {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Custom Instagram Grid - 2 rows x 4 columns */
+.custom-instagram-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1.5rem;
+    max-width: 1400px;
+    margin: 0 auto 4rem auto;
+}
+
+.instagram-post {
+    position: relative;
+    aspect-ratio: 1;
+    border-radius: 15px;
+    overflow: hidden;
+    background: var(--white);
+    box-shadow: var(--shadow-light);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.instagram-post:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: var(--shadow-heavy);
+}
+
+.instagram-post a {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.instagram-post img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Responsive Design for Custom Instagram Grid */
+@media (max-width: 1024px) {
+    .custom-instagram-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        padding: 0 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .custom-instagram-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        aspect-ratio: 2/4;
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .custom-instagram-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+        padding: 0 1rem;
+    }
+} 

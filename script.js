@@ -137,3 +137,34 @@ document.addEventListener('DOMContentLoaded', function() {
 console.log('%c🎨 Creative Portfolio', 'color: #6c63ff; font-size: 16px; font-weight: bold;');
 console.log('%c💜 Made by Alina - Young artist from Ukraine 🇺🇦', 'color: #7f8c8d; font-size: 12px;');
 console.log('%c📧 Contact: manzhuraalina@gmail.com', 'color: #7f8c8d; font-size: 12px;');
+
+// Custom Instagram Grid Animation
+document.addEventListener('DOMContentLoaded', function() {
+    const instagramPosts = document.querySelectorAll('.instagram-post');
+    
+    // Add staggered animation to Instagram posts
+    instagramPosts.forEach((post, index) => {
+        post.style.opacity = '0';
+        post.style.transform = 'translateY(30px)';
+        post.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        post.style.animationDelay = `${index * 0.1}s`;
+        
+        // Trigger animation when in view
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => {
+                            entry.target.style.opacity = '1';
+                            entry.target.style.transform = 'translateY(0)';
+                        }, index * 100);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            },
+            { threshold: 0.1 }
+        );
+        
+        observer.observe(post);
+    });
+});
