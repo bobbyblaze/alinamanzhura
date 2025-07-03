@@ -923,7 +923,7 @@ p {
     }
     
     .hero, .about, .portfolio, .contact, .instagram { 
-        margin-right: 0;
+        margin-right: 0 !important;
         margin-top: 0;
     }
 
